@@ -1,3 +1,36 @@
 @import 'tailwindcss';
 @import 'fumadocs-ui/css/neutral.css';
 @import 'fumadocs-ui/css/preset.css';
+
+/* Custom font stack to give a distinctive look (prefer system UI fonts like SF Pro) */
+:root {
+	--app-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'SF Pro Text', 'Inter', sans-serif;
+}
+
+html, body {
+	font-family: var(--app-font);
+}
+
+/* Apple-like button style: single color, subtle shadow, smooth scale on hover */
+.btn-apple {
+	display: inline-block;
+	padding: 0.5rem 1.25rem; /* px-5 py-2 */
+	border-radius: 9999px; /* rounded-full */
+	font-size: 0.875rem; /* text-sm */
+	font-weight: 500; /* font-medium */
+	color: #111827; /* text-gray-900 */
+	background: #ffffff; /* bg-white */
+	box-shadow: 0 6px 18px rgba(17,24,39,0.08); /* shadow-md-like */
+	transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+}
+.btn-apple:hover {
+	transform: scale(1.06);
+}
+.btn-apple:active {
+	transform: scale(0.98);
+}
+.btn-apple:focus {
+	outline: none;
+	box-shadow: 0 0 0 4px rgba(0,0,0,0.06);
+}
+

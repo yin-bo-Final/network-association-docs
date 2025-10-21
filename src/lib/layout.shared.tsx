@@ -12,8 +12,8 @@ export function baseOptions(): BaseLayoutProps {
     nav: {
       title: (
         <>
-              {/* logo removed - keep text only */}
-              yin_bo_docs
+          {/* logo removed - keep text only */}
+          yin_bo_docs
         </>
       ),
     },
